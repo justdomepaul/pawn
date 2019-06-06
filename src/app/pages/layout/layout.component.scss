@@ -43,9 +43,13 @@ mat-toolbar-row {
   justify-content:  center;
   > img {
     height: auto;
-    max-width: 70%;
     width: 100%;
     opacity: 0.7;
+  }
+  @media only screen and (min-width: 900px) {
+    > img {
+      max-width: 70%;
+    }
   }
   > div {
     background-color: #ffffff6e;

@@ -12,7 +12,7 @@ export class LayoutComponent implements OnInit {
     name: '台南中西區 日日會',
     address: '710台南市永康區中山路101巷2之1號5號',
     tel: '0986 192 292',
-    imageUrlArray: ['https://picsum.photos/id/0/800/600', 'https://picsum.photos/id/1/800/600'],
+    imageUrlArray: ['https://i.imgur.com/I6zCiTv.jpg', 'https://i.imgur.com/B9EYYWo.jpg'],
     plan: [
       {
         moneyTotal: '3萬',
