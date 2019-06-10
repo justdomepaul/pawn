@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { StoreInfo } from 'src/app/interface/store';
+import { MatIconRegistry } from '@angular/material';
+import { DomSanitizer } from '@angular/platform-browser';
+import { ActivatedRoute } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-layout',
@@ -35,9 +39,34 @@ export class LayoutComponent implements OnInit {
     ],
   };
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor(
+    private matIconRegistry: MatIconRegistry,
+    private domSanitizer: DomSanitizer,
+    private route: ActivatedRoute,
+    private http: HttpClient
+  ) {
+    this.matIconRegistry.addSvgIcon(
+      'phone',
+      this.domSanitizer.bypassSecurityTrustResourceUrl('https://image.flaticon.com/icons/svg/60/60720.svg')
+    );
+    this.matIconRegistry.addSvgIcon(
+      'directions',
+      this.domSanitizer.bypassSecurityTrustResourceUrl('https://image.flaticon.com/icons/svg/61/61021.svg')
+    );
   }
 
+  ngOnInit() {
+    this.route.params.subscribe(
+      (v) => {
+        console.log(v);
+        this.http.get('assets/pawn/' + v.phone + '.json').subscribe(
+          (storeInfo: StoreInfo) => {
+            this.storeInfo = storeInfo;
+          },
+          (e) => { console.log(e); },
+        );
+      },
+      (e) => { console.log(e); },
+    );
+  }
 }

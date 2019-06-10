@@ -1,87 +1,89 @@
-<mat-toolbar color="primary">
-  <mat-toolbar-row>
-    <span>{{storeInfo.name}}</span>
-    <span class="example-spacer"></span>
-    <a [href]="'tel:'+storeInfo.tel" target="_blank">
-      <mat-icon>phone</mat-icon>
-    </a>
-    <a [href]="'https://www.google.com/maps/search/'+storeInfo.address" target="_blank">
-      <mat-icon>directions</mat-icon>
-    </a>
-  </mat-toolbar-row>
-</mat-toolbar>
-<div class="slideshowDiv">
-  <slideshow [showDots]="true" [imageUrls]="storeInfo.imageUrlArray"></slideshow>
-</div>
+<ng-container *ngIf="storeInfo !== undefined">
+  <mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <span>{{storeInfo.name}}</span>
+      <span class="example-spacer"></span>
+      <a [href]="'tel:'+storeInfo.tel" target="_blank">
+        <mat-icon svgIcon="phone">phone</mat-icon>
+      </a>
+      <a [href]="'https://www.google.com/maps/search/'+storeInfo.address" target="_blank">
+        <mat-icon svgIcon="directions"></mat-icon>
+      </a>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <div class="slideshowDiv">
+    <slideshow [showDots]="true" [imageUrls]="storeInfo.imageUrlArray"></slideshow>
+  </div>
 
-<div class="container">
-  <h3 style="text-align: center;">週轉不求人，還款無壓力</h3>
-</div>
+  <div class="container">
+    <h3 style="text-align: center;">週轉不求人，還款無壓力</h3>
+  </div>
 
-<div class="container">
-  <div class="flex-div">
-    <div class="flex-item">
-      <button mat-raised-button color="primary">攤販</button>
-    </div>
-    <div class="flex-item">
-      <button mat-raised-button>市場</button>
-    </div>
-    <div class="flex-item">
-      <button mat-raised-button color="accent">店家</button>
-    </div>
-    <div class="flex-item">
-      <button mat-raised-button color="warn">商家</button>
+  <div class="container">
+    <div class="flex-div">
+      <div class="flex-item">
+        <button mat-raised-button color="primary">攤販</button>
+      </div>
+      <div class="flex-item">
+        <button mat-raised-button>市場</button>
+      </div>
+      <div class="flex-item">
+        <button mat-raised-button color="accent">店家</button>
+      </div>
+      <div class="flex-item">
+        <button mat-raised-button color="warn">商家</button>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="container">
-  <mat-card>
-    <mat-card-content>
-      <h3>三大保證</h3>
-      <ul>
-        <li>條件操寬鬆</li>
-        <li>免押免保</li>
-        <li>不看信用</li>
-      </ul>
-    </mat-card-content>
-  </mat-card>
-</div>
-
-<div class="parallax">
-  <img src="assets/prod/parallax01.jpg">
-  <div>
-    <h3>急用錢？找我們</h3>
+  <div class="container">
+    <mat-card>
+      <mat-card-content>
+        <h3>三大保證</h3>
+        <ul>
+          <li>條件操寬鬆</li>
+          <li>免押免保</li>
+          <li>不看信用</li>
+        </ul>
+      </mat-card-content>
+    </mat-card>
   </div>
-</div>
 
-<div class="container">
-  <table class="table table-bordered">
-    <tr>
-      <th>金額</th>
-      <th>實拿</th>
-      <th>天數</th>
-      <th>日繳</th>
-    </tr>
-    <ng-container *ngFor="let plan of storeInfo.plan">
+  <div class="parallax">
+    <img src="assets/prod/parallax01.jpg">
+    <div>
+      <h3>急用錢？找我們</h3>
+    </div>
+  </div>
+
+  <div class="container">
+    <table class="table table-bordered">
       <tr>
-        <td>{{plan.moneyTotal}}</td>
-        <td>{{plan.moneyTake}}</td>
-        <td>{{plan.returnDays}}</td>
-        <td>{{plan.moneyReturn}}</td>
+        <th>金額</th>
+        <th>實拿</th>
+        <th>天數</th>
+        <th>日繳</th>
       </tr>
-    </ng-container>
-  </table>
-</div>
-
-<a [href]="'tel:'+storeInfo.tel" target="_blank">
-  <div style="background-color: #ff0000;text-align: center;color: #ffffff">
-    <br>
-    <p>無論遲繳,負債過高,協商強停,法扣..等<br>條件不佳可詳談協助伸辦</p>
-    <p>勞工/領現/八大 各行各業工作滿一個月皆可辦理</p>
-    <h2>
-      <mat-icon>phone</mat-icon> {{storeInfo.tel}} 馬經理
-    </h2>
-    <br>
+      <ng-container *ngFor="let plan of storeInfo.plan">
+        <tr>
+          <td>{{plan.moneyTotal}}</td>
+          <td>{{plan.moneyTake}}</td>
+          <td>{{plan.returnDays}}</td>
+          <td>{{plan.moneyReturn}}</td>
+        </tr>
+      </ng-container>
+    </table>
   </div>
-</a>
+
+  <a [href]="'tel:'+storeInfo.tel" target="_blank">
+    <div style="background-color: #ff0000;text-align: center;color: #ffffff">
+      <br>
+      <p>無論遲繳,負債過高,協商強停,法扣..等<br>條件不佳可詳談協助伸辦</p>
+      <p>勞工/領現/八大 各行各業工作滿一個月皆可辦理</p>
+      <h2>
+        <mat-icon svgIcon="phone"></mat-icon> {{storeInfo.tel}} 馬經理
+      </h2>
+      <br>
+    </div>
+  </a>
+</ng-container>

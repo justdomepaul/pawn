@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { PagesModule } from './pages/pages.module';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-  { path: '', loadChildren: './pages/pages.module#PagesModule' }
+  { path: '', component: HomeComponent },
+  { path: ':name', loadChildren: './pages/pages.module#PagesModule' }
 ];
 
 @NgModule({
