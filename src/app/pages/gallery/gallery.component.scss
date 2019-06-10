@@ -1,0 +1,6 @@
+.flex-div {
+  flex-wrap: wrap;
+  > .flex-item {
+    flex: 1 calc(100% / 3 - (5px * 3 -1)) !important;
+  }
+}

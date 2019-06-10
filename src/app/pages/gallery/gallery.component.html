@@ -1,0 +1,15 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>圖庫區域</span>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<div class="container">
+  <div class="flex-div">
+    <div class="flex-item" *ngFor="let img of imgarrs;let i = index">
+      <p>{{(i + (pageEvent.pageIndex * imgarrs.length))}}</p>
+      <img [src]="'https://picsum.photos/id/' + (i + (pageEvent.pageIndex * imgarrs.length)) + '/800/530'" width="100%">
+    </div>
+  </div>
+</div>
+<mat-paginator [length]="240" [pageSize]="12" (page)="pageEvent = $event" [hidePageSize]="true"></mat-paginator>
