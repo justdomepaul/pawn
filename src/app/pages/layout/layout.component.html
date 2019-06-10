@@ -1,10 +1,13 @@
 <ng-container *ngIf="storeInfo !== undefined">
   <mat-toolbar color="primary">
     <mat-toolbar-row>
-      <span>{{storeInfo.name}}</span>
+      <span>{{storeInfo.storeName}}</span>
       <span class="example-spacer"></span>
+      <a [href]="'https://line.me/ti/p/~'+storeInfo.lineId" target="_blank">
+        <mat-icon svgIcon="lineLogo"></mat-icon>
+      </a>
       <a [href]="'tel:'+storeInfo.tel" target="_blank">
-        <mat-icon svgIcon="phone">phone</mat-icon>
+        <mat-icon svgIcon="phone"></mat-icon>
       </a>
       <a [href]="'https://www.google.com/maps/search/'+storeInfo.address" target="_blank">
         <mat-icon svgIcon="directions"></mat-icon>
@@ -16,22 +19,13 @@
   </div>
 
   <div class="container">
-    <h3 style="text-align: center;">週轉不求人，還款無壓力</h3>
+    <h2 style="text-align: center;">{{storeInfo.slogan}}</h2>
   </div>
 
   <div class="container">
-    <div class="flex-div">
-      <div class="flex-item">
-        <button mat-raised-button color="primary">攤販</button>
-      </div>
-      <div class="flex-item">
-        <button mat-raised-button>市場</button>
-      </div>
-      <div class="flex-item">
-        <button mat-raised-button color="accent">店家</button>
-      </div>
-      <div class="flex-item">
-        <button mat-raised-button color="warn">商家</button>
+    <div class="flex-div" *ngFor="let sloganTag of storeInfo.sloganTag;">
+      <div class="flex-item" *ngFor="let item of sloganTag">
+        <button mat-raised-button [color]="item.color">{{item.text}}</button>
       </div>
     </div>
   </div>
@@ -39,20 +33,18 @@
   <div class="container">
     <mat-card>
       <mat-card-content>
-        <h3>三大保證</h3>
+        <p style="font-size: 1.5rem;text-align: center;">{{storeInfo.card.title}}</p>
         <ul>
-          <li>條件操寬鬆</li>
-          <li>免押免保</li>
-          <li>不看信用</li>
+          <li *ngFor="let list of storeInfo.card.list">{{list}}</li>
         </ul>
       </mat-card-content>
     </mat-card>
   </div>
 
   <div class="parallax">
-    <img src="assets/prod/parallax01.jpg">
+    <img [src]="storeInfo.parallax.backgroudImage">
     <div>
-      <h3>急用錢？找我們</h3>
+      <h3>{{storeInfo.parallax.text}}</h3>
     </div>
   </div>
 
@@ -78,10 +70,9 @@
   <a [href]="'tel:'+storeInfo.tel" target="_blank">
     <div style="background-color: #ff0000;text-align: center;color: #ffffff">
       <br>
-      <p>無論遲繳,負債過高,協商強停,法扣..等<br>條件不佳可詳談協助伸辦</p>
-      <p>勞工/領現/八大 各行各業工作滿一個月皆可辦理</p>
+      <p style="white-space: pre-line">{{storeInfo.floorText}}</p>
       <h2>
-        <mat-icon svgIcon="phone"></mat-icon> {{storeInfo.tel}} 馬經理
+        <mat-icon svgIcon="phone"></mat-icon> {{storeInfo.tel}} {{storeInfo.userName}}
       </h2>
       <br>
     </div>
