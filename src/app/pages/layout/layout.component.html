@@ -3,13 +3,13 @@
     <mat-toolbar-row>
       <span>{{storeInfo.storeName}}</span>
       <span class="example-spacer"></span>
-      <a [href]="'https://line.me/ti/p/~'+storeInfo.lineId" target="_blank">
+      <a [href]="'https://line.me/ti/p/~'+storeInfo.lineId" target="_blank" *ngIf="storeInfo.lineId !== ''">
         <mat-icon svgIcon="lineLogo"></mat-icon>
       </a>
-      <a [href]="'tel:'+storeInfo.tel" target="_blank">
+      <a [href]="'tel:'+storeInfo.tel" target="_blank" *ngIf="storeInfo.tel !== ''">
         <mat-icon svgIcon="phone"></mat-icon>
       </a>
-      <a [href]="'https://www.google.com/maps/search/'+storeInfo.address" target="_blank">
+      <a [href]="'https://www.google.com/maps/search/'+storeInfo.address" target="_blank" *ngIf="storeInfo.address !== ''">
         <mat-icon svgIcon="directions"></mat-icon>
       </a>
     </mat-toolbar-row>
