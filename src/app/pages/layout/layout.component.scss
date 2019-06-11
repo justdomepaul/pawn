@@ -68,3 +68,15 @@ mat-toolbar-row {
 table {
   text-align: center;
 }
+
+.cardInfo {
+  > p {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+  }
+  li {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+}

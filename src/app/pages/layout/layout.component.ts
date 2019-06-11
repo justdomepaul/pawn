@@ -35,6 +35,12 @@ export class LayoutComponent implements OnInit {
     },
     plan: [
       {
+        moneyTotal: '金額',
+        moneyTake: '實拿',
+        returnDays: '天數',
+        moneyReturn: '日繳',
+      },
+      {
         moneyTotal: '3萬',
         moneyTake: '30000',
         returnDays: '60',
@@ -88,6 +94,7 @@ export class LayoutComponent implements OnInit {
         this.http.get('assets/pawn/' + v.phone + '.json').subscribe(
           (storeInfo: StoreInfo) => {
             this.storeInfo = storeInfo;
+            console.log(storeInfo);
             this.pawnInit();
           },
           (e) => { console.log(e); },

@@ -3,14 +3,15 @@
     <mat-toolbar-row>
       <span>{{storeInfo.storeName}}</span>
       <span class="example-spacer"></span>
-      <a [href]="'https://line.me/ti/p/~'+storeInfo.lineId" target="_blank" *ngIf="storeInfo.lineId !== ''">
-        <mat-icon svgIcon="lineLogo"></mat-icon>
-      </a>
       <a [href]="'tel:'+storeInfo.tel" target="_blank" *ngIf="storeInfo.tel !== ''">
         <mat-icon svgIcon="phone"></mat-icon>
       </a>
-      <a [href]="'https://www.google.com/maps/search/'+storeInfo.address" target="_blank" *ngIf="storeInfo.address !== ''">
+      <a [href]="'https://www.google.com/maps/search/'+storeInfo.address" target="_blank"
+        *ngIf="storeInfo.address !== ''">
         <mat-icon svgIcon="directions"></mat-icon>
+      </a>
+      <a [href]="'https://line.me/ti/p/~'+storeInfo.lineId" target="_blank" *ngIf="storeInfo.lineId !== ''">
+        <mat-icon svgIcon="lineLogo"></mat-icon>
       </a>
     </mat-toolbar-row>
   </mat-toolbar>
@@ -32,8 +33,8 @@
 
   <div class="container">
     <mat-card>
-      <mat-card-content>
-        <p style="font-size: 1.5rem;text-align: center;">{{storeInfo.card.title}}</p>
+      <mat-card-content class="cardInfo">
+        <p>{{storeInfo.card.title}}</p>
         <ul>
           <li *ngFor="let list of storeInfo.card.list">{{list}}</li>
         </ul>
@@ -50,19 +51,23 @@
 
   <div class="container">
     <table class="table table-bordered">
-      <tr>
-        <th>金額</th>
-        <th>實拿</th>
-        <th>天數</th>
-        <th>日繳</th>
-      </tr>
-      <ng-container *ngFor="let plan of storeInfo.plan">
-        <tr>
-          <td>{{plan.moneyTotal}}</td>
-          <td>{{plan.moneyTake}}</td>
-          <td>{{plan.returnDays}}</td>
-          <td>{{plan.moneyReturn}}</td>
-        </tr>
+      <ng-container *ngFor="let plan of storeInfo.plan;let i = index;">
+        <ng-container *ngIf="i === 0;else planelse">
+          <tr>
+            <th>{{plan.moneyTotal}}</th>
+            <th>{{plan.moneyTake}}</th>
+            <th>{{plan.returnDays}}</th>
+            <th>{{plan.moneyReturn}}</th>
+          </tr>
+        </ng-container>
+        <ng-template #planelse>
+          <tr>
+            <td>{{plan.moneyTotal}}</td>
+            <td>{{plan.moneyTake}}</td>
+            <td>{{plan.returnDays}}</td>
+            <td>{{plan.moneyReturn}}</td>
+          </tr>
+        </ng-template>
       </ng-container>
     </table>
   </div>

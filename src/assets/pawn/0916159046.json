@@ -36,6 +36,12 @@
   ],
   "plan": [
     {
+      "moneyTotal": "金額",
+      "moneyTake": "實拿",
+      "returnDays": "天數",
+      "moneyReturn": "日繳"
+    },
+    {
       "moneyTotal": "3萬",
       "moneyTake": "30000",
       "returnDays": "60",
