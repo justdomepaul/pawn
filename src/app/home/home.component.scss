@@ -1,0 +1,26 @@
+.plan {
+  border: 1px solid #ccc !important;
+  > h4 {
+    text-align: center;
+  }
+  > button {
+    color: #1a73e8;
+    display: block;
+    min-width: 120px;
+    margin: auto auto 30px auto;
+  }
+  > p {
+    display: flex;
+    margin: 5px 0 5px 0;
+    > img {
+      width: 20px;
+    }
+  }
+}
+
+.flex-div {
+  flex-wrap: wrap;
+  > .flex-item {
+    flex: 1 calc(100% / 2 - (5px * 2 -1)) !important;
+  }
+}

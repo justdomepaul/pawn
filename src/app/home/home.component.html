@@ -1,3 +1,31 @@
-<p>
-  home works!
-</p>
+<div class="slideshowDiv">
+  <slideshow [showDots]="true" [imageUrls]="imageUrlArray"></slideshow>
+</div>
+<h1 align="center">高評分的當舖平台</h1>
+
+<div class="parallax">
+  <img src="https://picsum.photos/id/122/800/530">
+  <div>
+    <h3>立即加入，開拓客源</h3>
+  </div>
+</div>
+
+<h3 align="center">價格方案</h3>
+
+<div class="container">
+  <div class="flex-div">
+    <div class="flex-item" *ngFor="let plan of plans">
+      <mat-card class="plan">
+        <h4>{{plan.product}}</h4>
+        <button mat-raised-button>${{plan.money}}</button>
+        <span></span>
+        <button mat-button>${{math.round(plan.money/plan.month)}}/月</button>
+        <mat-divider></mat-divider>
+        <p>包含</p>
+        <p><img src="https://image.flaticon.com/icons/svg/390/390973.svg">&nbsp;質感圖庫</p>
+        <p><img src="https://image.flaticon.com/icons/svg/390/390973.svg">&nbsp;排名優化</p>
+        <p><img src="https://image.flaticon.com/icons/svg/390/390973.svg">&nbsp;專員修改</p>
+      </mat-card>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,73 @@
+{
+  "storeName": "台南中西區 借你錢",
+  "address": "",
+  "tel": "0981383197",
+  "userName": "金小姐",
+  "slogan": "錢是活錢，讓你錢賺錢",
+  "floorText": "代償高利，轉貸再降息\n一通電話，馬上送達",
+  "lineId": "",
+  "sloganTag": [
+    [
+      {
+        "color": "primary",
+        "text": "攤販"
+      },
+      {
+        "color": "",
+        "text": "市場"
+      },
+      {
+        "color": "accent",
+        "text": "店家"
+      },
+      {
+        "color": "warn",
+        "text": "商家"
+      }
+    ]
+  ],
+  "parallax": {
+    "text": "急用錢？找我們",
+    "backgroudImage": "assets/prod/parallax01.jpg"
+  },
+  "imageUrlArray": [
+    "assets/prod/banner01.jpg",
+    "assets/prod/banner02.jpg"
+  ],
+  "plan": [
+    {
+      "moneyTotal": "金額",
+      "moneyTake": "實拿",
+      "returnDays": "天數",
+      "moneyReturn": "日繳"
+    },
+    {
+      "moneyTotal": "3萬",
+      "moneyTake": "30000",
+      "returnDays": "60",
+      "moneyReturn": "550"
+    },
+    {
+      "moneyTotal": "6萬",
+      "moneyTake": "60000",
+      "returnDays": "60",
+      "moneyReturn": "1100"
+    },
+    {
+      "moneyTotal": "9萬",
+      "moneyTake": "90000",
+      "returnDays": "60",
+      "moneyReturn": "1650"
+    }
+  ],
+  "card": {
+    "title": "借你錢",
+    "list": [
+      "借幾天，算幾天",
+      "免押/免保",
+      "不須任何擔保",
+      "姊妹合資最低率",
+      "借3萬實拿29800元日付200元"
+    ]
+  }
+}

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MatButtonModule, MatToolbarModule, MatIconModule, MatCardModule, MatPaginatorModule } from '@angular/material';
+import { MatButtonModule, MatToolbarModule, MatIconModule, MatCardModule, MatPaginatorModule, MatDividerModule } from '@angular/material';
 import { SlideshowModule } from 'ng-simple-slideshow';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -16,6 +16,7 @@ import { HttpClientModule } from '@angular/common/http';
     SlideshowModule,
     MatCardModule,
     MatPaginatorModule,
+    MatDividerModule,
     HttpClientModule,
   ],
 })
