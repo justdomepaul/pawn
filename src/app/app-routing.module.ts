@@ -5,7 +5,7 @@ import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: ':name', loadChildren: './pages/pages.module#PagesModule' }
+  { path: ':name', loadChildren: './pages/pages.module#PagesModule', data: { preload: true } }
 ];
 
 @NgModule({

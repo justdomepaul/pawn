@@ -1,11 +1,11 @@
 {
-  "storeName": "台南中西區 借你錢",
+  "storeName": "台南 日日會",
   "address": "",
-  "tel": "0981383197",
-  "userName": "金小姐",
-  "slogan": "錢是活錢，讓你錢賺錢",
-  "floorText": "代償高利，轉貸再降息\n一通電話，馬上送達",
-  "lineId": "",
+  "tel": "0916159046",
+  "userName": "陳經理",
+  "slogan": "週轉不求人，還款無壓力",
+  "floorText": "無論遲繳,負債過高,協商強停,法扣..等\r\n條件不佳可詳談協助伸辦\n勞工/領現/八大 各行各業工作滿一個月皆可辦理",
+  "lineId": "gt881",
   "sloganTag": [
     [
       {
@@ -31,6 +31,7 @@
     "backgroudImage": "assets/prod/parallax01.jpg"
   },
   "imageUrlArray": [
+    "assets/pawn/0916159046/image.jpg",
     "assets/prod/banner01.jpg",
     "assets/prod/banner02.jpg"
   ],
@@ -61,13 +62,13 @@
     }
   ],
   "card": {
-    "title": "借你錢",
+    "title": "五大優點",
     "list": [
-      "借幾天，算幾天",
+      "彈性還款",
+      "門檻低",
       "免押/免保",
-      "不須任何擔保",
-      "姊妹合資最低率",
-      "借3萬實拿29800元日付200元"
+      "條件操寬鬆",
+      "不看信用"
     ]
   }
 }

@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { MatButtonModule, MatToolbarModule, MatIconModule, MatCardModule, MatPaginatorModule, MatDividerModule } from '@angular/material';
 import { SlideshowModule } from 'ng-simple-slideshow';
 import { HttpClientModule } from '@angular/common/http';
+import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [],
@@ -17,6 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
     MatCardModule,
     MatPaginatorModule,
     MatDividerModule,
+    NgbCarouselModule,
     HttpClientModule,
   ],
 })

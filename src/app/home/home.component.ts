@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   math = Math;
-  imageUrlArray = [
-    'https://picsum.photos/id/20/800/530',
-    'https://picsum.photos/id/180/800/530'
+  carouselArr = [
+    {
+      image: 'https://picsum.photos/id/20/800/530',
+      h3: '立即上線，佔盡先機',
+      p: '現在加入\n網路的商機都是你的'
+    },
+    {
+      image: 'https://picsum.photos/id/180/800/530',
+      h3: '增加曝光，提升形象',
+      p: 'Google 90以上評分\n適合手機/平板/電腦'
+    },
   ];
   plans = [
     { product: '半年', month: 6, money: 3000 },

@@ -1,7 +1,14 @@
-<div class="slideshowDiv">
-  <slideshow [showDots]="true" [imageUrls]="imageUrlArray"></slideshow>
-</div>
-<h1 align="center">高評分的當舖平台</h1>
+<ngb-carousel [interval]="6000">
+  <ng-template ngbSlide *ngFor="let carousel of carouselArr">
+    <img [src]="carousel.image">
+    <div class="carousel-caption">
+      <h3>{{carousel.h3}}</h3>
+      <p>{{carousel.p}}</p>
+    </div>
+  </ng-template>
+</ngb-carousel>
+
+<h1 align="center" style="margin-top: 15px;">高評分的當舖平台</h1>
 
 <div class="parallax">
   <img src="https://picsum.photos/id/122/800/530">
@@ -10,11 +17,26 @@
   </div>
 </div>
 
-<h3 align="center">價格方案</h3>
+<div class="container">
+  <p style="margin: 0px;text-align: center;">使用案例</p>
+  <div class="flex-div case">
+    <div class="flex-item">
+      <p class="mat-chip">台南 日日會</p>
+      <img src="assets/pawn/0916159046/image.jpg" width="100%">
+      <button mat-raised-button color="primary" routerLink="0916159046">前往觀看</button>
+    </div>
+    <div class="flex-item">
+      <p class="mat-chip">台南 借你錢</p>
+      <img src="assets/pawn/0981383197/image.jpg" width="100%">
+      <button mat-raised-button color="primary" routerLink="0981383197">前往觀看</button>
+    </div>
+  </div>
+</div>
 
+<h3 align="center">價格方案</h3>
 <div class="container">
   <div class="flex-div">
-    <div class="flex-item" *ngFor="let plan of plans">
+    <div class="flex-item" *ngFor="let plan of plans;let i = index" [ngClass]="{'bowrain': i==1}">
       <mat-card class="plan">
         <h4>{{plan.product}}</h4>
         <button mat-raised-button>${{plan.money}}</button>
@@ -29,3 +51,6 @@
     </div>
   </div>
 </div>
+
+<br>
+<br>
