@@ -39,7 +39,7 @@
     <div class="flex-item" *ngFor="let plan of plans;let i = index" [ngClass]="{'bowrain': i==1}">
       <mat-card class="plan">
         <h4>{{plan.product}}</h4>
-        <button mat-raised-button>${{plan.money}}</button>
+        <a mat-raised-button [href]="plan.link" target="_blank">${{plan.money}}</a>
         <span></span>
         <button mat-button>${{math.round(plan.money/plan.month)}}/月</button>
         <mat-divider></mat-divider>
