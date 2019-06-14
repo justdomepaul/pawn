@@ -1,11 +1,11 @@
 {
-  "storeName": "台南中西區 日日會",
-  "address": "710台南市永康區中山路101巷2之1號5號",
-  "tel": "0986 192 292",
-  "userName": "馬經理",
+  "storeName": "台南 日日會",
+  "address": "",
+  "tel": "0916159046",
+  "userName": "陳經理",
   "slogan": "週轉不求人，還款無壓力",
   "floorText": "無論遲繳,負債過高,協商強停,法扣..等\r\n條件不佳可詳談協助伸辦\n勞工/領現/八大 各行各業工作滿一個月皆可辦理",
-  "lineId": "5987dogking",
+  "lineId": "gt881",
   "sloganTag": [
     [
       {
@@ -24,36 +24,6 @@
         "color": "warn",
         "text": "商家"
       }
-    ],
-    [
-      {
-        "color": "accent",
-        "text": "店家"
-      },
-      {
-        "color": "accent",
-        "text": "店家"
-      },
-      {
-        "color": "accent",
-        "text": "店家"
-      }
-    ],
-    [
-      {
-        "color": "warn",
-        "text": "商家"
-      },
-      {
-        "color": "warn",
-        "text": "商家"
-      }
-    ],
-    [
-      {
-        "color": "primary",
-        "text": "攤販"
-      }
     ]
   ],
   "parallax": {
@@ -61,10 +31,17 @@
     "backgroudImage": "assets/prod/parallax01.jpg"
   },
   "imageUrlArray": [
+    "assets/pawn/image/0916159046.jpg",
     "assets/prod/banner01.jpg",
     "assets/prod/banner02.jpg"
   ],
   "plan": [
+    {
+      "moneyTotal": "金額",
+      "moneyTake": "實拿",
+      "returnDays": "天數",
+      "moneyReturn": "日繳"
+    },
     {
       "moneyTotal": "3萬",
       "moneyTake": "30000",
@@ -85,10 +62,12 @@
     }
   ],
   "card": {
-    "title": "三大保證",
+    "title": "五大優點",
     "list": [
+      "彈性還款",
+      "門檻低",
+      "免押/免保",
       "條件操寬鬆",
-      "免押免保",
       "不看信用"
     ]
   }
