@@ -91,7 +91,7 @@ export class LayoutComponent implements OnInit {
     this.route.params.subscribe(
       (v) => {
         console.log(v);
-        this.http.get('assets/pawn/' + v.phone + '/data.json').subscribe(
+        this.http.get('assets/pawn/json' + v.phone + '.json').subscribe(
           (storeInfo: StoreInfo) => {
             this.storeInfo = storeInfo;
             console.log(storeInfo);

@@ -5,6 +5,30 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './home.component.html',
   styleUrls: ['../pages/layout/layout.component.scss', './home.component.scss']
 })
+/*
+0900134727.jpg
+0901192171.jpg
+0902294993-1.jpg
+0902294993.jpg
+0909362339.jpg
+0909484292.jpg
+0916054681.jpg
+0916159046.jpg
+0916760854-1.jpg
+0916760854.jpg
+0922539122.jpg
+0966824558.jpg
+0970163109.jpg
+0976880830.jpg
+0978613214.jpg
+0981383197-1.jpg
+0981383197-2.jpg
+0981383197.jpg
+0983683060-1.jpg
+0983683060.jpg
+0986192292.jpg
+*/
+
 export class HomeComponent implements OnInit {
   math = Math;
   carouselArr = [
