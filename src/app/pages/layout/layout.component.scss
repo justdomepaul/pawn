@@ -44,6 +44,7 @@ mat-toolbar-row {
   display: flex;
   align-items: center;
   justify-content: center;
+  white-space: pre-line;
   > img {
     height: auto;
     width: 100%;

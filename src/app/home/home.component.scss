@@ -34,6 +34,12 @@
   flex-wrap: wrap;
   > .flex-item {
     flex: 1 calc(100% / 2 - (5px * 2 -1)) !important;
+    display: block !important;
+    flex-wrap: wrap;
+    align-content: space-between;
+    p {
+      width: 100%;
+    }
   }
 }
 @media only screen and (min-width: 900px) {

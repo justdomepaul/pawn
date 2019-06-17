@@ -1,10 +1,10 @@
 {
-  "storeName": "台南 鄉民互助會",
+  "storeName": "台南 互助會",
   "address": "",
-  "tel": "0981383197",
-  "userName": "金小姐",
-  "slogan": "錢是活錢，讓你錢賺錢",
-  "floorText": "代償高利，轉貸再降息\n一通電話，馬上送達",
+  "tel": "0970163109",
+  "userName": "互助會",
+  "slogan": "生意人週轉互助會",
+  "floorText": "急需現金週轉嗎？補貨缺現金嗎？\n各行各業皆可貸給您週轉快速撥款",
   "lineId": "",
   "sloganTag": [
     [
@@ -27,13 +27,11 @@
     ]
   ],
   "parallax": {
-    "text": "急用錢？找我們",
+    "text": "１～１５萬\n輕鬆借分期還",
     "backgroudImage": "assets/prod/parallax01.jpg"
   },
   "imageUrlArray": [
-    "assets/pawn/image/0981383197.jpg",
-    "assets/pawn/image/0981383197-1.jpg",
-    "assets/pawn/image/0981383197-2.jpg",
+    "assets/pawn/image/0970163109.jpg",
     "assets/prod/banner01.jpg",
     "assets/prod/banner02.jpg"
   ],
@@ -46,31 +44,31 @@
     },
     {
       "moneyTotal": "3萬",
-      "moneyTake": "30000",
-      "returnDays": "60",
-      "moneyReturn": "550"
+      "moneyTake": "28000",
+      "returnDays": "30",
+      "moneyReturn": "1000"
     },
     {
       "moneyTotal": "6萬",
-      "moneyTake": "60000",
-      "returnDays": "60",
-      "moneyReturn": "1100"
+      "moneyTake": "56000",
+      "returnDays": "30",
+      "moneyReturn": "2000"
     },
     {
       "moneyTotal": "9萬",
-      "moneyTake": "90000",
-      "returnDays": "60",
-      "moneyReturn": "1650"
+      "moneyTake": "84000",
+      "returnDays": "30",
+      "moneyReturn": "3000"
     }
   ],
   "card": {
     "title": "當舖優點",
     "list": [
-      "借幾天，算幾天",
-      "免押/免保",
-      "不須任何擔保",
-      "姊妹合資最低率",
-      "借3萬實拿29800元日付200元"
+      "彈性還款",
+      "門檻低",
+      "40天、50天、60天",
+      "還款方案任君選擇",
+      "低息、撥款快"
     ]
   }
 }

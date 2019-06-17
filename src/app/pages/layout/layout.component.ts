@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { StoreInfo } from 'src/app/interface/store';
-import { MatIconRegistry } from '@angular/material';
-import { DomSanitizer } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
-import { HttpClient } from '@angular/common/http';
+import { PawnService } from 'src/app/service/pawn.service';
 
 @Component({
   selector: 'app-layout',
@@ -66,32 +64,17 @@ export class LayoutComponent implements OnInit {
   };
 
   constructor(
-    private matIconRegistry: MatIconRegistry,
-    private domSanitizer: DomSanitizer,
     private route: ActivatedRoute,
-    private http: HttpClient
+    private pawnService: PawnService,
   ) {
-    // https://image.flaticon.com/icons/svg/60/60720.svg
-    this.matIconRegistry.addSvgIcon(
-      'phone',
-      this.domSanitizer.bypassSecurityTrustResourceUrl('assets/svg/phone.svg')
-    );
-    // https://image.flaticon.com/icons/svg/61/61021.svg
-    this.matIconRegistry.addSvgIcon(
-      'directions',
-      this.domSanitizer.bypassSecurityTrustResourceUrl('assets/svg/directions.svg')
-    );
-    this.matIconRegistry.addSvgIcon(
-      'lineLogo',
-      this.domSanitizer.bypassSecurityTrustResourceUrl('assets/svg/lineLogo.svg')
-    );
+
   }
 
   ngOnInit() {
     this.route.params.subscribe(
       (v) => {
         console.log(v);
-        this.http.get('assets/pawn/json' + v.phone + '.json').subscribe(
+        this.pawnService.pawnGetJson(v.phone).subscribe(
           (storeInfo: StoreInfo) => {
             this.storeInfo = storeInfo;
             console.log(storeInfo);

@@ -1,36 +1,32 @@
 import { Component, OnInit } from '@angular/core';
+import { StoreInfo } from '../interface/store';
+import { PawnService } from '../service/pawn.service';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['../pages/layout/layout.component.scss', './home.component.scss']
 })
-/*
-0900134727.jpg
-0901192171.jpg
-0902294993-1.jpg
-0902294993.jpg
-0909362339.jpg
-0909484292.jpg
-0916054681.jpg
-0916159046.jpg
-0916760854-1.jpg
-0916760854.jpg
-0922539122.jpg
-0966824558.jpg
-0970163109.jpg
-0976880830.jpg
-0978613214.jpg
-0981383197-1.jpg
-0981383197-2.jpg
-0981383197.jpg
-0983683060-1.jpg
-0983683060.jpg
-0986192292.jpg
-*/
 
 export class HomeComponent implements OnInit {
   math = Math;
+  pawnList = [
+    '0900134727',
+    '0901192171',
+    '0909362339',
+    '0909484292',
+    '0916054681',
+    '0916159046',
+    '0916760854',
+    '0922539122',
+    '0966824558',
+    '0970163109',
+    '0976880830',
+    '0902294993',
+    '0978613214',
+  ];
+  pawns: StoreInfo[] = [];
+
   carouselArr = [
     {
       image: 'https://picsum.photos/id/20/800/530',
@@ -51,9 +47,23 @@ export class HomeComponent implements OnInit {
     { product: '四年', month: 48, money: 14000, link: 'https://forms.gle/tXveGNKDYNteXwbT7' },
     { product: '五年', month: 60, money: 15000, link: 'https://forms.gle/tXveGNKDYNteXwbT7' },
   ];
-  constructor() { }
+  constructor(
+    private pawnService: PawnService,
+  ) { }
 
   ngOnInit() {
+    this.pawnGet();
+  }
+
+  pawnGet() {
+    this.pawnList.map(phone => {
+      this.pawnService.pawnGetJson(phone).subscribe(
+        (v: StoreInfo) => {
+          this.pawns.push(v);
+        },
+        (e) => { console.log(e); },
+      );
+    });
   }
 
 }
