@@ -1,11 +1,11 @@
 {
-  "storeName": "台南 鄉民互助會",
+  "storeName": "台南 最體貼日日會",
   "address": "",
-  "tel": "0981383197",
-  "userName": "金小姐",
-  "slogan": "錢是活錢，讓你錢賺錢",
-  "floorText": "代償高利，轉貸再降息\n一通電話，馬上送達",
-  "lineId": "",
+  "tel": "0916054681",
+  "userName": "張專員",
+  "slogan": "借款日起算\n借幾天算幾天",
+  "floorText": "可日/週繳\n攤販/店家勞工/八大 皆可辦理",
+  "lineId": "My681",
   "sloganTag": [
     [
       {
@@ -14,26 +14,24 @@
       },
       {
         "color": "",
-        "text": "市場"
-      },
-      {
-        "color": "accent",
         "text": "店家"
       },
       {
+        "color": "accent",
+        "text": "八大"
+      },
+      {
         "color": "warn",
-        "text": "商家"
+        "text": "勞工"
       }
     ]
   ],
   "parallax": {
-    "text": "急用錢？找我們",
+    "text": "最體貼的日日會 業界首創",
     "backgroudImage": "assets/prod/parallax01.jpg"
   },
   "imageUrlArray": [
-    "assets/pawn/image/0981383197.jpg",
-    "assets/pawn/image/0981383197-1.jpg",
-    "assets/pawn/image/0981383197-2.jpg",
+    "assets/pawn/image/0916054681.jpg",
     "assets/prod/banner01.jpg",
     "assets/prod/banner02.jpg"
   ],
@@ -66,11 +64,11 @@
   "card": {
     "title": "當舖優點",
     "list": [
-      "借幾天，算幾天",
+      "彈性還款",
+      "門檻低",
       "免押/免保",
-      "不須任何擔保",
-      "姊妹合資最低率",
-      "借3萬實拿29800元日付200元"
+      "不亂收手續/保管費",
+      "線上審核當日放款"
     ]
   }
 }

@@ -1,0 +1,74 @@
+{
+  "storeName": "台南 優質借款平台",
+  "address": "",
+  "tel": "0909362339",
+  "userName": "劉小姐",
+  "slogan": "借2萬實拿19500",
+  "floorText": "優質借款平台",
+  "lineId": "",
+  "sloganTag": [
+    [
+      {
+        "color": "primary",
+        "text": "攤販"
+      },
+      {
+        "color": "",
+        "text": "店面"
+      },
+      {
+        "color": "accent",
+        "text": "上班族"
+      },
+      {
+        "color": "warn",
+        "text": "有工作"
+      }
+    ]
+  ],
+  "parallax": {
+    "text": "需求.時間彈性",
+    "backgroudImage": "assets/prod/parallax01.jpg"
+  },
+  "imageUrlArray": [
+    "assets/pawn/image/0909362339.jpg",
+    "assets/prod/banner01.jpg",
+    "assets/prod/banner02.jpg"
+  ],
+  "plan": [
+    {
+      "moneyTotal": "金額",
+      "moneyTake": "實拿",
+      "returnDays": "天數",
+      "moneyReturn": "日繳"
+    },
+    {
+      "moneyTotal": "2萬",
+      "moneyTake": "19500",
+      "returnDays": "100",
+      "moneyReturn": "195"
+    },
+    {
+      "moneyTotal": "3萬",
+      "moneyTake": "29300",
+      "returnDays": "100",
+      "moneyReturn": "293"
+    },
+    {
+      "moneyTotal": "5萬",
+      "moneyTake": "49000",
+      "returnDays": "100",
+      "moneyReturn": "490"
+    }
+  ],
+  "card": {
+    "title": "當舖優點",
+    "list": [
+      "絕對保密",
+      "彈性還款",
+      "門檻低",
+      "免押/免保",
+      "條件操寬鬆"
+    ]
+  }
+}

@@ -1,10 +1,10 @@
 {
-  "storeName": "台南 鄉民互助會",
+  "storeName": "台南 便利'商'急救站",
   "address": "",
-  "tel": "0981383197",
-  "userName": "金小姐",
-  "slogan": "錢是活錢，讓你錢賺錢",
-  "floorText": "代償高利，轉貸再降息\n一通電話，馬上送達",
+  "tel": "0902294993",
+  "userName": "劉小姐",
+  "slogan": "借2萬實拿19800",
+  "floorText": "日付200借幾天算幾天",
   "lineId": "",
   "sloganTag": [
     [
@@ -14,26 +14,25 @@
       },
       {
         "color": "",
-        "text": "市場"
+        "text": "店面"
       },
       {
         "color": "accent",
-        "text": "店家"
+        "text": "上班族"
       },
       {
         "color": "warn",
-        "text": "商家"
+        "text": "有工作"
       }
     ]
   ],
   "parallax": {
-    "text": "急用錢？找我們",
+    "text": "需求.時間彈性",
     "backgroudImage": "assets/prod/parallax01.jpg"
   },
   "imageUrlArray": [
-    "assets/pawn/image/0981383197.jpg",
-    "assets/pawn/image/0981383197-1.jpg",
-    "assets/pawn/image/0981383197-2.jpg",
+    "assets/pawn/image/0902294993.jpg",
+    "assets/pawn/image/0902294993-1.jpg",
     "assets/prod/banner01.jpg",
     "assets/prod/banner02.jpg"
   ],
@@ -48,29 +47,29 @@
       "moneyTotal": "3萬",
       "moneyTake": "30000",
       "returnDays": "60",
-      "moneyReturn": "550"
+      "moneyReturn": "500"
     },
     {
       "moneyTotal": "6萬",
       "moneyTake": "60000",
       "returnDays": "60",
-      "moneyReturn": "1100"
+      "moneyReturn": "1000"
     },
     {
       "moneyTotal": "9萬",
       "moneyTake": "90000",
       "returnDays": "60",
-      "moneyReturn": "1650"
+      "moneyReturn": "1500"
     }
   ],
   "card": {
     "title": "當舖優點",
     "list": [
-      "借幾天，算幾天",
+      "絕對保密",
+      "彈性還款",
+      "門檻低",
       "免押/免保",
-      "不須任何擔保",
-      "姊妹合資最低率",
-      "借3萬實拿29800元日付200元"
+      "條件操寬鬆"
     ]
   }
 }

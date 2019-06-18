@@ -1,11 +1,11 @@
 {
-  "storeName": "台南中西區 日日會",
-  "address": "710台南市永康區中山路101巷2之1號5號",
-  "tel": "0986 192 292",
-  "userName": "馬經理",
-  "slogan": "週轉不求人，還款無壓力",
-  "floorText": "無論遲繳,負債過高,協商強停,法扣..等\r\n條件不佳可詳談協助伸辦\n勞工/領現/八大 各行各業工作滿一個月皆可辦理",
-  "lineId": "5987dogking",
+  "storeName": "台南 夫妻自營",
+  "address": "",
+  "tel": "0922539122",
+  "userName": "謝太太",
+  "slogan": "急用當日放款",
+  "floorText": "我們是一對熱心助人的夫妻\n不求高利，只求平實在。\n若您有調度上的困難\n只要您有固定職業，即可向我們貸款。",
+  "lineId": "",
   "sloganTag": [
     [
       {
@@ -24,43 +24,14 @@
         "color": "warn",
         "text": "商家"
       }
-    ],
-    [
-      {
-        "color": "accent",
-        "text": "店家"
-      },
-      {
-        "color": "accent",
-        "text": "店家"
-      },
-      {
-        "color": "accent",
-        "text": "店家"
-      }
-    ],
-    [
-      {
-        "color": "warn",
-        "text": "商家"
-      },
-      {
-        "color": "warn",
-        "text": "商家"
-      }
-    ],
-    [
-      {
-        "color": "primary",
-        "text": "攤販"
-      }
     ]
   ],
   "parallax": {
-    "text": "急用錢？找我們",
+    "text": "免押&免保&息低保密\n土地,房屋一,二,三胎",
     "backgroudImage": "assets/prod/parallax01.jpg"
   },
   "imageUrlArray": [
+    "assets/pawn/image/0922539122.jpg",
     "assets/prod/banner01.jpg",
     "assets/prod/banner02.jpg"
   ],
@@ -93,9 +64,10 @@
   "card": {
     "title": "當舖優點",
     "list": [
-      "條件操寬鬆",
-      "免押免保",
-      "不看信用"
+      "彈性還款",
+      "門檻低",
+      "免押/免保",
+      "條件操寬鬆"
     ]
   }
 }

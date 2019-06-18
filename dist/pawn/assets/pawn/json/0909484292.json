@@ -1,0 +1,70 @@
+{
+  "storeName": "台南 來標會",
+  "address": "",
+  "tel": "0909484292",
+  "userName": "來標會",
+  "slogan": "標會來捕獲\n補貨來賺錢",
+  "floorText": "來標會實拿，決不收取任何費用、免保、免押",
+  "lineId": "",
+  "sloganTag": [
+    [
+      {
+        "color": "primary",
+        "text": "攤販"
+      },
+      {
+        "color": "warn",
+        "text": "市場"
+      },
+      {
+        "color": "accent",
+        "text": "店面"
+      }
+    ]
+  ],
+  "parallax": {
+    "text": "優惠市場店面\n來電送發財金",
+    "backgroudImage": "assets/prod/parallax01.jpg"
+  },
+  "imageUrlArray": [
+    "assets/pawn/image/0909484292.jpg",
+    "assets/prod/banner01.jpg",
+    "assets/prod/banner02.jpg"
+  ],
+  "plan": [
+    {
+      "moneyTotal": "金額",
+      "moneyTake": "實拿",
+      "returnDays": "天數",
+      "moneyReturn": "日繳"
+    },
+    {
+      "moneyTotal": "1萬",
+      "moneyTake": "10000",
+      "returnDays": "50",
+      "moneyReturn": "200"
+    },
+    {
+      "moneyTotal": "2萬",
+      "moneyTake": "20000",
+      "returnDays": "50",
+      "moneyReturn": "400"
+    },
+    {
+      "moneyTotal": "3萬",
+      "moneyTake": "30000",
+      "returnDays": "50",
+      "moneyReturn": "600"
+    }
+  ],
+  "card": {
+    "title": "當舖優點",
+    "list": [
+      "絕對保密",
+      "彈性還款",
+      "門檻低",
+      "免押/免保",
+      "條件操寬鬆"
+    ]
+  }
+}

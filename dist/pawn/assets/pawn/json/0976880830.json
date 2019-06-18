@@ -1,0 +1,84 @@
+{
+  "storeName": "台南 互助會",
+  "address": "",
+  "tel": "0976880830",
+  "userName": "韓經理",
+  "slogan": "生意人週轉互助會",
+  "floorText": "輕鬆借\n輕鬆還",
+  "lineId": "0976880830",
+  "sloganTag": [
+    [
+      {
+        "color": "primary",
+        "text": "市場"
+      },
+      {
+        "color": "",
+        "text": "攤販"
+      },
+      {
+        "color": "accent",
+        "text": "店家"
+      },
+      {
+        "color": "warn",
+        "text": "商家"
+      }
+    ]
+  ],
+  "parallax": {
+    "text": "１～１５萬\n輕鬆借分期還",
+    "backgroudImage": "assets/prod/parallax01.jpg"
+  },
+  "imageUrlArray": [
+    "assets/pawn/image/0976880830.jpg",
+    "assets/prod/banner01.jpg",
+    "assets/prod/banner02.jpg"
+  ],
+  "plan": [
+    {
+      "moneyTotal": "金額",
+      "moneyTake": "實拿",
+      "returnDays": "天數",
+      "moneyReturn": "日繳"
+    },
+    {
+      "moneyTotal": "1.5萬",
+      "moneyTake": "14000",
+      "returnDays": "30",
+      "moneyReturn": "500"
+    },
+    {
+      "moneyTotal": "3萬",
+      "moneyTake": "28000",
+      "returnDays": "30",
+      "moneyReturn": "1000"
+    },
+    {
+      "moneyTotal": "6萬",
+      "moneyTake": "56000",
+      "returnDays": "30",
+      "moneyReturn": "2000"
+    },
+    {
+      "moneyTotal": "9萬",
+      "moneyTake": "84000",
+      "returnDays": "30",
+      "moneyReturn": "3000"
+    },
+    {
+      "moneyTotal": "12萬",
+      "moneyTake": "112000",
+      "returnDays": "30",
+      "moneyReturn": "4000"
+    }
+  ],
+  "card": {
+    "title": "當舖優點",
+    "list": [
+      "不怕比較",
+      "利息超低",
+      "全程保密"
+    ]
+  }
+}
