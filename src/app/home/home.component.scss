@@ -33,7 +33,7 @@
 .flex-div {
   flex-wrap: wrap;
   > .flex-item {
-    flex: 1 calc(100% / 2 - (5px * 2 -1)) !important;
+    flex: 1 calc(100% / 2 - (14px));
     display: block !important;
     flex-wrap: wrap;
     align-content: space-between;
@@ -46,7 +46,7 @@
   .flex-div {
     flex-wrap: wrap;
     > .flex-item {
-      flex: 1 calc(100% / 3 - (5px * 3 -1)) !important;
+      flex: 1 calc(100% / 3 - (14px));
     }
   }
 }
