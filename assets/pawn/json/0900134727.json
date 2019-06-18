@@ -1,11 +1,11 @@
 {
-  "storeName": "台南中西區 日日會",
-  "address": "710台南市永康區中山路101巷2之1號5號",
-  "tel": "0986 192 292",
-  "userName": "馬經理",
-  "slogan": "週轉不求人，還款無壓力",
-  "floorText": "無論遲繳,負債過高,協商強停,法扣..等\r\n條件不佳可詳談協助伸辦\n勞工/領現/八大 各行各業工作滿一個月皆可辦理",
-  "lineId": "5987dogking",
+  "storeName": "台南 王當舖",
+  "address": "",
+  "tel": "0900134727",
+  "userName": "王先生",
+  "slogan": "調度資金週轉補貨",
+  "floorText": "借幾天/算幾天",
+  "lineId": "",
   "sloganTag": [
     [
       {
@@ -24,43 +24,14 @@
         "color": "warn",
         "text": "商家"
       }
-    ],
-    [
-      {
-        "color": "accent",
-        "text": "店家"
-      },
-      {
-        "color": "accent",
-        "text": "店家"
-      },
-      {
-        "color": "accent",
-        "text": "店家"
-      }
-    ],
-    [
-      {
-        "color": "warn",
-        "text": "商家"
-      },
-      {
-        "color": "warn",
-        "text": "商家"
-      }
-    ],
-    [
-      {
-        "color": "primary",
-        "text": "攤販"
-      }
     ]
   ],
   "parallax": {
-    "text": "急用錢？找我們",
+    "text": "需求.時間彈性",
     "backgroudImage": "assets/prod/parallax01.jpg"
   },
   "imageUrlArray": [
+    "assets/pawn/image/0900134727.jpg",
     "assets/prod/banner01.jpg",
     "assets/prod/banner02.jpg"
   ],
@@ -75,26 +46,28 @@
       "moneyTotal": "3萬",
       "moneyTake": "30000",
       "returnDays": "60",
-      "moneyReturn": "550"
+      "moneyReturn": "500"
     },
     {
       "moneyTotal": "6萬",
       "moneyTake": "60000",
       "returnDays": "60",
-      "moneyReturn": "1100"
+      "moneyReturn": "1000"
     },
     {
       "moneyTotal": "9萬",
       "moneyTake": "90000",
       "returnDays": "60",
-      "moneyReturn": "1650"
+      "moneyReturn": "1500"
     }
   ],
   "card": {
     "title": "當舖優點",
     "list": [
+      "彈性還款",
+      "門檻低",
+      "免押/免保",
       "條件操寬鬆",
-      "免押免保",
       "不看信用"
     ]
   }

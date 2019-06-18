@@ -1,37 +1,38 @@
 {
-  "storeName": "台南 日日會",
+  "storeName": "台南 借你錢",
   "address": "",
-  "tel": "0916159046",
-  "userName": "陳經理",
-  "slogan": "週轉不求人\n還款無壓力",
-  "floorText": "無論遲繳,負債過高,協商強停,法扣..等\r\n條件不佳可詳談協助伸辦\n勞工/領現/八大 各行各業工作滿一個月皆可辦理",
-  "lineId": "gt881",
+  "tel": "0916760854",
+  "userName": "黃專員",
+  "slogan": "錢不是問題，周轉幫手",
+  "floorText": "各式方案\n任君選擇",
+  "lineId": "",
   "sloganTag": [
     [
       {
         "color": "primary",
-        "text": "攤販"
+        "text": "薪轉"
       },
       {
         "color": "",
-        "text": "市場"
+        "text": "店面"
       },
       {
         "color": "accent",
-        "text": "店家"
+        "text": "攤販"
       },
       {
         "color": "warn",
-        "text": "商家"
+        "text": "補貨"
       }
     ]
   ],
   "parallax": {
-    "text": "急用錢？找我們",
+    "text": "免押免保免留會",
     "backgroudImage": "assets/prod/parallax01.jpg"
   },
   "imageUrlArray": [
-    "assets/pawn/image/0916159046.jpg",
+    "assets/pawn/image/0916760854.jpg",
+    "assets/pawn/image/0916760854-1.jpg",
     "assets/prod/banner01.jpg",
     "assets/prod/banner02.jpg"
   ],
@@ -44,21 +45,21 @@
     },
     {
       "moneyTotal": "3萬",
-      "moneyTake": "30000",
-      "returnDays": "60",
-      "moneyReturn": "550"
+      "moneyTake": "29000",
+      "returnDays": "100",
+      "moneyReturn": "300"
     },
     {
       "moneyTotal": "6萬",
-      "moneyTake": "60000",
-      "returnDays": "60",
-      "moneyReturn": "1100"
+      "moneyTake": "58000",
+      "returnDays": "100",
+      "moneyReturn": "600"
     },
     {
       "moneyTotal": "9萬",
-      "moneyTake": "90000",
-      "returnDays": "60",
-      "moneyReturn": "1650"
+      "moneyTake": "87000",
+      "returnDays": "100",
+      "moneyReturn": "900"
     }
   ],
   "card": {
