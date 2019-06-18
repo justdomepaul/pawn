@@ -3,11 +3,13 @@
   > h4 {
     text-align: center;
   }
+  > a, button {
+    display: block;
+    margin: auto auto 30px auto;
+  }
   > a {
     color: #1a73e8;
-    display: block;
     width: 120px;
-    margin: auto auto 30px auto;
   }
   > p {
     display: flex;
