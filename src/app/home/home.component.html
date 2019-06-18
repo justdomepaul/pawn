@@ -1,6 +1,6 @@
 <ngb-carousel [interval]="6000">
   <ng-template ngbSlide *ngFor="let carousel of carouselArr">
-    <img [src]="carousel.image">
+    <img [src]="carousel.imageWebp" (error)="img.src = carousel.image" #img>
     <div class="carousel-caption">
       <h3>{{carousel.h3}}</h3>
       <p>{{carousel.p}}</p>
@@ -11,7 +11,7 @@
 <h1 align="center" style="margin: 20px 0 5px;letter-spacing: 4px;font-size: 2.15rem;">高評分的當舖平台</h1>
 
 <div class="parallax">
-  <img src="https://picsum.photos/id/122/800/530">
+  <img src="assets/home/webp/parallax01.webp" (error)="parallax.src = 'assets/home/parallax01.jpg'" #parallax>
   <div style="-webkit-filter: drop-shadow(12px 5px 7px rgba(0, 0, 0, 0.65));
   filter: drop-shadow(12px 5px 7px rgba(0, 0, 0, 0.65));">
     <h3>立即加入，開拓客源</h3>
@@ -23,7 +23,8 @@
   <div class="flex-div case">
     <div class="flex-case" *ngFor="let pawn of pawns">
       <p class="mat-chip">{{pawn.storeName}}</p>
-      <img [src]="'assets/pawn/image/'+pawn.tel+'.jpg'" width="100%">
+      <img [src]="'assets/pawn/webp/'+pawn.tel+'.webp'" (error)="img.src = 'assets/pawn/image/'+pawn.tel+'.jpg'" #img
+        width="100%">
       <button mat-raised-button color="primary" [routerLink]="pawn.tel">前往觀看</button>
     </div>
   </div>
