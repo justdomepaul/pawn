@@ -1,0 +1,69 @@
+{
+  "storeName": "台南 渡錢關",
+  "address": "",
+  "tel": "0979552109",
+  "userName": "蘇小姐",
+  "slogan": "短期資金可週轉\n長期跟會沒壓力",
+  "floorText": "急需現金週轉嗎？補貨缺現金嗎？\n各行各業皆可貸給您週轉快速撥款",
+  "lineId": "",
+  "sloganTag": [
+    [
+      {
+        "color": "primary",
+        "text": "自營商"
+      },
+      {
+        "color": "accent",
+        "text": "新創業"
+      },
+      {
+        "color": "warn",
+        "text": "渡錢關"
+      }
+    ]
+  ],
+  "parallax": {
+    "text": "一月會以30日計\n月會金皆可先取",
+    "backgroudImage": "assets/prod/parallax01.jpg"
+  },
+  "imageUrlArray": [
+    "assets/pawn/image/0979552109.jpg",
+    "assets/prod/banner01.jpg",
+    "assets/prod/banner02.jpg"
+  ],
+  "plan": [
+    {
+      "moneyTotal": "金額",
+      "moneyTake": "實拿",
+      "returnDays": "天數",
+      "moneyReturn": "日繳"
+    },
+    {
+      "moneyTotal": "1萬",
+      "moneyTake": "10000",
+      "returnDays": "30",
+      "moneyReturn": "300"
+    },
+    {
+      "moneyTotal": "3萬",
+      "moneyTake": "30000",
+      "returnDays": "30",
+      "moneyReturn": "900"
+    },
+    {
+      "moneyTotal": "6萬",
+      "moneyTake": "60000",
+      "returnDays": "30",
+      "moneyReturn": "1800"
+    }
+  ],
+  "card": {
+    "title": "當舖優點",
+    "list": [
+      "彈性還款",
+      "免押/免保",
+      "門檻低",
+      "低息、撥款快"
+    ]
+  }
+}

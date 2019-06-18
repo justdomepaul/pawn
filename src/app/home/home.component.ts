@@ -23,6 +23,8 @@ export class HomeComponent implements OnInit {
     '0970163109',
     '0976880830',
     '0902294993',
+    '0981301409',
+    '0979552109',
     '0978613214',
   ];
   pawns: StoreInfo[] = [];
