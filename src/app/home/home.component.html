@@ -8,7 +8,7 @@
   </ng-template>
 </ngb-carousel>
 
-<h1 align="center" style="margin-top: 15px;">高評分的當舖平台</h1>
+<h1 align="center" style="margin: 20px 0 5px;letter-spacing: 4px;font-size: 2.15rem;">高評分的當舖平台</h1>
 
 <div class="parallax">
   <img src="https://picsum.photos/id/122/800/530">
@@ -17,10 +17,10 @@
   </div>
 </div>
 
-<div class="container">
-  <p style="margin: 0px;text-align: center;">使用案例</p>
+<div class="container" style="margin-bottom: 15px;">
+  <h3 align="center" style="margin-bottom: 10px;">使用案例</h3>
   <div class="flex-div case">
-    <div class="flex-item" *ngFor="let pawn of pawns">
+    <div class="flex-case" *ngFor="let pawn of pawns">
       <p class="mat-chip">{{pawn.storeName}}</p>
       <img [src]="'assets/pawn/image/'+pawn.tel+'.jpg'" width="100%">
       <button mat-raised-button color="primary" [routerLink]="pawn.tel">前往觀看</button>
@@ -28,7 +28,7 @@
   </div>
 </div>
 
-<h3 align="center">價格方案</h3>
+<h3 align="center" style="margin-bottom: 10px;">價格方案</h3>
 <div class="container">
   <div class="flex-div">
     <div class="flex-item" *ngFor="let plan of plans;let i = index" [ngClass]="{'bowrain': i==1}">

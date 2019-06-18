@@ -35,19 +35,30 @@
 .flex-div {
   flex-wrap: wrap;
   > .flex-item {
-    flex: 1 calc(100% / 2 - (14px));
-    display: block !important;
-    flex-wrap: wrap;
-    align-content: space-between;
+    display: block;
     p {
       width: 100%;
+    }
+  }
+  > .flex-case {
+    display: flex;
+    margin: 0 5px 10px;
+    flex: 1 calc(100% / 2 - (14px));
+    flex-wrap: wrap;
+    align-content: space-between;
+    > * {
+      width: 100%;
+    }
+    .mat-chip {
+      border-radius: 8px;
+      padding: 3px 0;
     }
   }
 }
 @media only screen and (min-width: 900px) {
   .flex-div {
     flex-wrap: wrap;
-    > .flex-item {
+    > .flex-item, .flex-case {
       flex: 1 calc(100% / 3 - (14px));
     }
   }
@@ -63,6 +74,12 @@
     bottom: 50px;
     > p {
       white-space: pre-line;
+    }
+    
+    @media (min-width: 320px) and (max-width: 768px) {
+      h3 {
+        font-size: 1.35rem;
+      }
     }
   }
 }
