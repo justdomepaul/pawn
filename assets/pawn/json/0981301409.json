@@ -1,0 +1,74 @@
+{
+  "storeName": "台南 真好貸",
+  "address": "",
+  "tel": "0981301409",
+  "userName": "阿昇",
+  "slogan": "債務整合降息，利息可談",
+  "floorText": "專營 房屋土地1.2.3胎",
+  "lineId": "",
+  "sloganTag": [
+    [
+      {
+        "color": "primary",
+        "text": "市場"
+      },
+      {
+        "color": "",
+        "text": "攤販"
+      },
+      {
+        "color": "accent",
+        "text": "店面"
+      },
+      {
+        "color": "warn",
+        "text": "上班族"
+      }
+    ]
+  ],
+  "parallax": {
+    "text": "借幾天，算幾天\n絕不會息滾息",
+    "backgroudImage": "assets/prod/parallax01.jpg"
+  },
+  "imageUrlArray": [
+    "assets/pawn/image/0981301409.jpg",
+    "assets/prod/banner01.jpg",
+    "assets/prod/banner02.jpg"
+  ],
+  "plan": [
+    {
+      "moneyTotal": "金額",
+      "moneyTake": "實拿",
+      "returnDays": "天數",
+      "moneyReturn": "日繳"
+    },
+    {
+      "moneyTotal": "1萬",
+      "moneyTake": "10000",
+      "returnDays": "30",
+      "moneyReturn": "300"
+    },
+    {
+      "moneyTotal": "3萬",
+      "moneyTake": "30000",
+      "returnDays": "30",
+      "moneyReturn": "900"
+    },
+    {
+      "moneyTotal": "6萬",
+      "moneyTake": "60000",
+      "returnDays": "30",
+      "moneyReturn": "1800"
+    }
+  ],
+  "card": {
+    "title": "當舖優點",
+    "list": [
+      "各式方案,任您選擇,方便好商量",
+      "彈性還款",
+      "免押/免保",
+      "門檻低",
+      "低息、撥款快"
+    ]
+  }
+}
