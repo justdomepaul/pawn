@@ -1,0 +1,47 @@
+{
+  "storeName": "EZ.FIX蘋果系列維修",
+  "address": "710台南市永康區中華路594號",
+  "tel": "0917986981",
+  "userName": "EZ.FIX",
+  "slogan": "配合到府現場維修，設備完善",
+  "floorText": "到府服務節省時間省去出門的麻煩\n服務態度親切 維修速度快 提供保固服務\n專業的拆解不擔心損傷手機",
+  "lineId": "",
+  "sloganTag": [
+    [
+      {
+        "color": "primary",
+        "text": "iPhone"
+      },
+      {
+        "color": "",
+        "text": "換電池"
+      },
+      {
+        "color": "accent",
+        "text": "螢幕破裂"
+      },
+      {
+        "color": "warn",
+        "text": "到府維修"
+      }
+    ]
+  ],
+  "parallax": {
+    "text": "蘋果維修？找我們",
+    "backgroudImage": "assets/prod/parallax01.jpg"
+  },
+  "imageUrlArray": [
+    "assets/pawn/image/0917986981.jpg",
+    "assets/pawn/image/0917986981-1.jpg",
+    "assets/prod/banner02.jpg"
+  ],
+  "plan": [],
+  "card": {
+    "title": "本店優點",
+    "list": [
+      "專業技術",
+      "設備完善",
+      "報價公道"
+    ]
+  }
+}
